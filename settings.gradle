@@ -1,0 +1,3 @@
+if(System.getenv("TRAVIS") == null) {
+    include 'complete'
+}

@@ -1,0 +1,14 @@
+
+Create a Controller with a method that returns a `Conference`. Micronaut will convert it automatically to JSON in the
+ response:
+
+[source,java]
+.src/main/java/example/micronaut/ConferenceController.java
+----
+include::{sourceDir}/src/main/java/example/micronaut/ConferenceController.java[]
+----
+
+<1> The class is defined as a controller with the `@Controller` annotation mapped to the path `/conferences`.
+<2> Constructor injection
+<3> The `@Get` annotation is used to map the index method to all requests that use an HTTP GET
+<4> Return a `Conference`.
